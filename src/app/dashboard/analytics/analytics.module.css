@@ -1,0 +1,261 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-shrink: 0;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+.select {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.topMetrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.metricCard {
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.metricIcon {
+    width: 48px;
+    height: 48px;
+    background: var(--bg-tertiary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+}
+
+.metricInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.metricLabel {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+}
+
+.metricValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.metricChange {
+    font-size: 0.75rem;
+}
+
+.positive {
+    color: #4ade80;
+}
+
+.negative {
+    color: #facc15;
+}
+
+/* Changed to yellow/warning for risk factor */
+.neutral {
+    color: var(--text-muted);
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.colSpan2 {
+    grid-column: span 2;
+}
+
+.chartPanel {
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panelHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.panelTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.iconBtn {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.barChartContainer {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.yAxis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    padding-bottom: 24px;
+    /* Space for x-axis labels */
+}
+
+.barsArea {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+/* Add grid lines */
+.barsArea::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    border-top: 1px dashed var(--border-light);
+}
+
+.barsArea::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px dashed var(--border-light);
+}
+
+.barColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    gap: 0.5rem;
+}
+
+.barFill {
+    width: 35%;
+    background: var(--text-muted);
+    border-radius: 4px 4px 0 0;
+    transition: all 0.3s;
+    min-width: 12px;
+    max-width: 32px;
+}
+
+.barFill:hover {
+    background: var(--accent);
+}
+
+.barLabel {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* Optimizations */
+.optimizationList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.optItem {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding: 1rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.optScore {
+    width: 48px;
+    height: 48px;
+    background: rgba(220, 38, 38, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(220, 38, 38, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.optInfo h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.optInfo p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}

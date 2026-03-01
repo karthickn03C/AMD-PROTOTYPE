@@ -1,0 +1,230 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+.aiBadge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.statCard {
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.statHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.statHeader h3 {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.statValue {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.statLimit {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.statTrend {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.gridCol1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.panel {
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.panelTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+}
+
+.insightsList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.insightItem {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.insightIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: rgba(220, 38, 38, 0.1);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.insightItem h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.insightItem p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.docList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.docItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+}
+
+.docInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.docName {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.docMeta {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.docStatus {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.statusAnalyzed {
+    background: rgba(34, 197, 94, 0.1);
+    color: #4ade80;
+}
+
+.statusProcessing {
+    background: rgba(234, 179, 8, 0.1);
+    color: #facc15;
+}
+
+.alertPanel {
+    border-color: rgba(220, 38, 38, 0.3);
+    background: linear-gradient(180deg, rgba(220, 38, 38, 0.05) 0%, var(--bg-secondary) 100%);
+}
+
+.alertList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.alertItem {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    border-left: 3px solid var(--accent);
+}
+
+.alertItem h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.alertItem p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.alertBadge {
+    background: var(--accent);
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
